@@ -8,18 +8,20 @@ import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const Contact = () => (
-  <div className="min-h-screen flex flex-col">
+  <div className="min-h-screen flex flex-col bg-gradient-to-tr from-lazioBlue/10 via-lazioGray/80 to-lazioDarkBlue/20">
     <NavBar />
     <main className="flex-grow">
       <div className="container mx-auto px-4 py-12">
-        <h2 className="text-3xl md:text-5xl font-bold text-lazioBlue mb-6 text-center">Contact Us</h2>
-        <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+        <h2 className="text-3xl md:text-5xl font-bold text-lazioBlue mb-6 text-center drop-shadow animate-fade-in">
+          Contact happytechtrade
+        </h2>
+        <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12 animate-fade-in">
           Have questions about our racking systems or need a custom quote? Our team is here to help you find the perfect storage solution for your business.
         </p>
         
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div>
-            <form className="bg-white p-6 rounded-lg shadow-md">
+            <form className="bg-white/80 glass-morphism p-8 rounded-2xl shadow-2xl animate-scale-in border border-lazioBlue/20 backdrop-blur-md">
               <h3 className="text-xl font-bold text-lazioDarkBlue mb-4">Send Us a Message</h3>
               
               <div className="mb-4">
@@ -46,18 +48,20 @@ const Contact = () => (
                 <Label className="block mb-1 text-gray-700 font-medium" htmlFor="message">Message</Label>
                 <textarea 
                   id="message" 
-                  className="w-full border border-gray-300 rounded-md px-3 py-2 min-h-[120px] focus:outline-none focus:ring-2 focus:ring-lazioBlue" 
-                  placeholder="Tell us about your requirements" 
+                  className="w-full border border-gray-300 rounded-md px-3 py-2 min-h-[120px] focus:outline-none focus:ring-2 focus:ring-lazioBlue resize-none bg-white/80"
+                  placeholder="Tell us about your requirements"
                   required
                 ></textarea>
               </div>
               
-              <Button type="submit" className="lazio-button w-full">Send Message</Button>
+              <Button type="submit" className="lazio-button w-full hover:scale-105 transition-transform duration-200">
+                Send Message
+              </Button>
             </form>
           </div>
           
           <div>
-            <div className="bg-lazioGray p-6 rounded-lg h-full">
+            <div className="bg-lazioGray/80 glass-morphism p-8 rounded-2xl h-full shadow-xl animate-slide-in-right border border-lazioBlue/10 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-lazioDarkBlue mb-4">Contact Information</h3>
               
               <div className="space-y-6">
@@ -91,7 +95,7 @@ const Contact = () => (
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-gray-700">info@happytechtrade.com</p>
+                    <p className="text-gray-700">happytechtrade@gmail.com</p>
                   </div>
                 </div>
                 
