@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -7,8 +6,17 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">happytechtrade</h3>
-            <p className="text-gray-300 mb-4">
+            <h3 
+              className="text-xl md:text-2xl font-extrabold mb-4 font-montserrat tracking-tight"
+              style={{
+                background: "linear-gradient(90deg, #fff 40%, #33C3F0 120%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent"
+              }}
+            >
+              happytechtrade
+            </h3>
+            <p className="text-gray-300 mb-4 text-base md:text-lg">
               Leading provider of industrial storage solutions and racking systems.
             </p>
             <div className="flex space-x-4">
@@ -41,7 +49,7 @@ const Footer: React.FC = () => {
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Products</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               <li><a href="#" className="text-gray-300 hover:text-white">Selective Racking</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Drive-In Racking</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Push Back Racking</a></li>
@@ -52,7 +60,7 @@ const Footer: React.FC = () => {
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-base">
               <li><a href="#" className="text-gray-300 hover:text-white">Design & Planning</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Installation</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Maintenance</a></li>
@@ -61,9 +69,10 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           
+          {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-base">
               <li className="flex items-start">
                 <svg className="h-6 w-6 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -85,7 +94,9 @@ const Footer: React.FC = () => {
                 <svg className="h-6 w-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <span className="text-gray-300">happytechtrade@gmail.com</span>
+                <span className="text-gray-300 underline underline-offset-2 transition hover:text-white">
+                  happytechtrade@gmail.com
+                </span>
               </li>
             </ul>
           </div>
@@ -96,7 +107,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} happytechtrade. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap space-x-4 md:space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Terms of Service</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Sitemap</a>

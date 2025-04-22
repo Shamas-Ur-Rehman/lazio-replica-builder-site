@@ -16,7 +16,6 @@ const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Closes menu on navigation (for mobile)
   React.useEffect(() => {
     setIsMenuOpen(false);
   }, [location.pathname]);
@@ -28,7 +27,27 @@ const NavBar: React.FC = () => {
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="text-lazioBlue font-bold text-2xl whitespace-nowrap"> \happytechtrade </div>
+              <span
+                className="
+                  text-lazioBlue 
+                  font-extrabold 
+                  text-xl 
+                  sm:text-2xl 
+                  md:text-3xl 
+                  tracking-tight 
+                  font-montserrat
+                  brand-gradient
+                  select-none
+                "
+                style={{
+                  letterSpacing: "0.04em",
+                  background: "linear-gradient(90deg, #1a4789 15%, #33C3F0 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent"
+                }}
+              >
+                happytechtrade
+              </span>
             </Link>
           </div>
 
