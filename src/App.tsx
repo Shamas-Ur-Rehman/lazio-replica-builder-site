@@ -16,26 +16,24 @@ import Contact from "./pages/Contact";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={queryClient}>
+    <BrowserRouter>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/build" element={<Build />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* Index and NotFound for fallback */}
-            <Route path="/index" element={<Index />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/build" element={<Build />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Index and NotFound for fallback */}
+          <Route path="/index" element={<Index />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </TooltipProvider>
-    </QueryClientProvider>
-  </React.StrictMode>
+    </BrowserRouter>
+  </QueryClientProvider>
 );
 
 export default App;
