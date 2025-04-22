@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -7,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">LAZIO RACKING</h3>
+            <h3 className="text-xl font-bold mb-4">\happytechtrade</h3>
             <p className="text-gray-300 mb-4">
               Leading provider of industrial storage solutions and racking systems.
             </p>
@@ -94,7 +93,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-12 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Lazio Racking. All rights reserved.
+              &copy; {new Date().getFullYear()} \happytechtrade. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
