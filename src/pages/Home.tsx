@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -118,6 +119,7 @@ const Home = () => (
           </div>
         </div>
       </div>
+      <Testimonials />
     </main>
     <Footer />
   </div>
