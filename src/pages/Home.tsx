@@ -105,7 +105,7 @@ const Home = () => (
         </div>
       </div>
       <Testimonials />
-      <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start mt-2 mb-2">
+      <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-center mt-2 mb-2">
         <Link to="/build">
           <Button className="lazio-button w-full sm:w-auto text-base md:text-lg">
             Start Building <ArrowRight className="ml-2 h-5 w-5" />
@@ -120,6 +120,21 @@ const Home = () => (
           </Button>
         </Link>
       </div>
+      {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start mt-2 mb-2">
+        <Link to="/build">
+          <Button className="lazio-button w-full sm:w-auto text-base md:text-lg">
+            Start Building <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </Link>
+        <Link to="/contact">
+          <Button
+            variant="outline"
+            className="border-lazioBlue text-lazioBlue hover:bg-lazioBlue hover:text-white w-full sm:w-auto text-base md:text-lg"
+          >
+            Contact Sales
+          </Button>
+        </Link> 
+      </div>*/}
     </main>
     <Footer />
   </div>
