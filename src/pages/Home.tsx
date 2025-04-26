@@ -44,21 +44,6 @@ const Home = () => (
                 products, build your own system, or get in touch for a tailored
                 quote!
               </p>
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-                <Link to="/build">
-                  <Button className="lazio-button w-full sm:w-auto text-base md:text-lg">
-                    Start Building <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button
-                    variant="outline"
-                    className="border-lazioBlue text-lazioBlue hover:bg-lazioBlue hover:text-white w-full sm:w-auto text-base md:text-lg"
-                  >
-                    Contact Sales
-                  </Button>
-                </Link>
-              </div>
             </div>
             <div className="md:w-1/2 w-full flex justify-center">
               <div className="bg-white p-2 rounded-lg shadow-md w-full xs:w-5/6 sm:w-3/4 md:w-full">
@@ -112,7 +97,22 @@ const Home = () => (
           <div className="mt-10 sm:mt-12 text-center">
             <Link to="/products">
               <Button className="lazio-button w-full sm:w-auto text-base md:text-lg">
-                View All Products
+                View All Services
+              </Button>
+            </Link>
+          </div>
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start mt-2">
+            <Link to="/build">
+              <Button className="lazio-button w-full sm:w-auto text-base md:text-lg">
+                Start Building <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button
+                variant="outline"
+                className="border-lazioBlue text-lazioBlue hover:bg-lazioBlue hover:text-white w-full sm:w-auto text-base md:text-lg"
+              >
+                Contact Sales
               </Button>
             </Link>
           </div>
