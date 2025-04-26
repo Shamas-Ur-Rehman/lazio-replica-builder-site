@@ -1,25 +1,27 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Shamas Salaih Hassan",
+    name: "Shamas",
     role: "Warehouse Manager",
-    content: "happytechtrade transformed our warehouse operations. Their racking solutions improved our efficiency by 40%.",
+    content:
+      "happytechtrade transformed our warehouse operations. Their racking solutions improved our efficiency by 40%.",
     rating: 5,
   },
   {
-    name: "Sarah Johnson",
+    name: " Salaih",
     role: "Operations Director",
-    content: "The custom storage solutions provided by happytechtrade perfectly fit our needs. Their team was professional and efficient.",
+    content:
+      "The custom storage solutions provided by happytechtrade perfectly fit our needs. Their team was professional and efficient.",
     rating: 5,
   },
   {
-    name: "Michael Chen",
+    name: "Hassan",
     role: "Logistics Coordinator",
-    content: "Outstanding service and quality. The installation team was excellent, and the results exceeded our expectations.",
+    content:
+      "Outstanding service and quality. The installation team was excellent, and the results exceeded our expectations.",
     rating: 5,
   },
 ];
@@ -33,8 +35,8 @@ const Testimonials = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="
                 relative 
                 backdrop-blur-sm 
@@ -59,10 +61,16 @@ const Testimonials = () => {
                     />
                   ))}
                 </div>
-                <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4 italic">"{testimonial.content}"</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4 italic">
+                  "{testimonial.content}"
+                </p>
                 <div className="mt-3 sm:mt-4">
-                  <p className="text-sm sm:text-base font-semibold text-lazioBlue">{testimonial.name}</p>
-                  <p className="text-xs sm:text-sm text-gray-600">{testimonial.role}</p>
+                  <p className="text-sm sm:text-base font-semibold text-lazioBlue">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-xs sm:text-sm text-gray-600">
+                    {testimonial.role}
+                  </p>
                 </div>
               </CardContent>
             </Card>
