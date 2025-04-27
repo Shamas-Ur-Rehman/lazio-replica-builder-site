@@ -49,7 +49,7 @@ const Products = () => (
     <main className="flex-grow">
       <div className="container mx-auto px-4 py-12">
         <h2 className="text-3xl md:text-5xl font-bold text-lazioBlue mb-6 text-center">
-          Our Products
+          Our Services
         </h2>
         <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
           Discover our comprehensive range of industrial storage and racking
