@@ -1,12 +1,11 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { path: "/", label: "Home" },
-  { path: "/products", label: "Products" },
+  { path: "/products", label: "Services" },
   { path: "/build", label: "Build" },
   { path: "/about", label: "About" },
   { path: "/contact", label: "Contact" },
@@ -41,9 +40,10 @@ const NavBar: React.FC = () => {
                 "
                 style={{
                   letterSpacing: "0.04em",
-                  background: "linear-gradient(90deg, #1a4789 15%, #33C3F0 100%)",
+                  background:
+                    "linear-gradient(90deg, #1a4789 15%, #33C3F0 100%)",
                   WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent"
+                  WebkitTextFillColor: "transparent",
                 }}
               >
                 happytechtrade
